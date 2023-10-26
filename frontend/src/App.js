@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 //Components Import
-import Home from './Components/Home';
+import Home from './Components/Home Components/Home';
 import Calender from './Components/Calender';
 import SignUp from './Components/SignUp';
 import LogIn from './Components/LogIn';

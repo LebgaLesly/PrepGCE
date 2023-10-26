@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
@@ -32,7 +32,8 @@ const PageLayout = () => {
     },
   ];
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-cyan-600 fixed z-50">
+    <>
+    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-cyan-600 fixed z-50 mb-8">
       <div className="text-4xl font-logo ml-2 text-white-400">
         <a href='' className=" hover:text-orange-400">Prep GCE</a>
       </div>
@@ -79,7 +80,13 @@ const PageLayout = () => {
           })}
         </ul>
       )}
+
+      
     </div>
+
+    
+    <Outlet />
+    </>
     
   )
 }
