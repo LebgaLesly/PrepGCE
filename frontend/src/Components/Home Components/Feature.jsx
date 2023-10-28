@@ -37,7 +37,7 @@ const Feature = () => {
         return (
             <div key={feature.id} className=' '>
               <img src={feature.img} alt={feature.des} className=' relative rounded-full w-20 h-20 md:w-52 md:h-52 hover:scale-105 cursor-pointer ' />
-              <h2 className='text-center font-bold pt-2 cursor-pointer'>{feature.des}</h2>
+              <h2 className='text-center font-bold pt-2 cursor-pointer text-xs md:text-base'>{feature.des}</h2>
             </div>
         );
       })}
