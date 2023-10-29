@@ -10,16 +10,8 @@ const Modal = ({open, onClose}) => {
       <h1 className='font-extrabold text-center pb-5 text-2xl'>Study Box</h1>
         <form action="">
           <div className='flex gap-2.5 pb-2'>
-            <label htmlFor="day" className='font-bold'>Choose a Day:</label>
-            <select name="day" id="day">
-              <option value="monday">Monday</option>
-              <option value="tuesday">Tuesday</option>
-              <option value="wednesday">Wednesday</option>
-              <option value="thursday">Thursday</option>
-              <option value="friday">Friday</option>
-              <option value="saturday">Saturday</option>
-              <option value="sunday">Sunday</option>
-            </select>
+            <label htmlFor="date" className='font-bold'>Choose a Date:</label>
+            <input type="date" id="date"  />
           </div>
           <div className='flex gap-2.5 pb-2'>
             <label htmlFor="class" className='font-bold'>Choose a Class:</label>
