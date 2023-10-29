@@ -14,24 +14,8 @@ const Modal = ({open, onClose}) => {
             <input type="date" id="date"  />
           </div>
           <div className='flex gap-2.5 pb-2'>
-            <label htmlFor="class" className='font-bold'>Choose a Class:</label>
-            <select name="class" id="class">
-              <option value="form5">Form 5</option>
-              <option value="lowersixth">LowerSixth</option>
-              <option value="uppersixth">UpperSixth</option>
-            </select>
-          </div>
-          <div className='flex gap-2.5 pb-2'>
-            <label htmlFor="subject" className='font-bold'>Choose Subject:</label>
-            <select name="subject" id="subject">
-              <option value="Accounting">Accounting</option>
-              <option value="Business Maths">Business Maths</option>
-              <option value="Economics">Economics</option>
-              <option value="Commerce and Finance">Commerce and Fianace</option>
-              <option value="Business Management">Busienss Math</option>
-              <option value="Marketing">Marketing</option>
-              <option value="other">Other</option>
-            </select>
+            <label htmlFor="class" className='font-bold'>Enter a Class:</label>
+            <input type="text" placeholder='Enter a Class' className="pl-2"/>
           </div>
 
           <div className='flex gap-2.5 pb-5'>
