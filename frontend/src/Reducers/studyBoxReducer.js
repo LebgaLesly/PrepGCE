@@ -1,12 +1,14 @@
 
 const studyBoxReducer = (state, action) => {
     switch(action.type) {
-      case 'FETCH_REQUEST':
-        return {...state, loading: true};
-      case 'FETCH_SUCCESS':
-        return {...state, studybox: action.payload, loading: false}
-      case 'FETCH_FAIL':
-        return {...state, loading: false, error: action.payload}
+      case 'SET_STUDYBOX':
+        return {
+          studybox: action.payload
+        };
+      case 'CREATE_STUDYBOX':
+        return {
+          studybox: [action.payload, ...state.studybox]
+        }
       default:
         return state
     }

@@ -10,9 +10,8 @@ export const StudyBoxContextProvider = ({children}) => {
         studybox: null
     })
 
-
     return (
-        <StudyBoxContext.Provider value={{state, dispatch}}>
+        <StudyBoxContext.Provider value={{...state, dispatch}}>
                 {children}
         </StudyBoxContext.Provider>
     )

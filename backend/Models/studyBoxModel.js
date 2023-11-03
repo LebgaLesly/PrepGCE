@@ -5,7 +5,7 @@ const studyBoxSchema = new mongoose.Schema({
         type: Date,
         required: true
     },
-    class: {
+    class1: {
         type: String,
         required: true
     },
@@ -13,7 +13,7 @@ const studyBoxSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    des: {
+    task: {
         type: String,
         required: true
     },

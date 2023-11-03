@@ -26,6 +26,11 @@ const PageLayout = () => {
       link: 'Signup',
     },
     {
+      id: 3,
+      linkto: 'signup',
+      link: 'Signup',
+    },
+    {
       id: 4,
       linkto: 'login',
       link: 'Login',
@@ -69,8 +74,6 @@ const PageLayout = () => {
                 <Link
                   onClick={() => setNav(false)}
                   to={link}
-                  smooth
-                  duration={500}
                 >
                   {' '}
                   {link}

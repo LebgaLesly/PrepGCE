@@ -1,13 +1,16 @@
-import { useState } from 'react';
+/* eslint-disable react-hooks/exhaustive-deps */
+import { useState} from 'react';
 
 //components import
 import Feature from './Feature';
 import Modal from './Modal';
 import  Fade  from 'react-reveal/Slide';
 import  Slide  from 'react-reveal/Slide';
+import StudyBoxDetails from './StudyBoxDetails';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
+  
   return (
     <>
       <div className='relative top-28 bg-[url("/src/Assets/banner.jpg")] bg-cover h-96 bg-center '>
@@ -32,6 +35,8 @@ const Home = () => {
       </div>
 
       <Modal open={isOpen} onClose={() => setIsOpen(false)} />
+      <StudyBoxDetails />
+      
     </>
   );
 };
